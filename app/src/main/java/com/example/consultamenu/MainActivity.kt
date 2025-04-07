@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.consultamenu.investigacion.TextoEstilizadoUI
+import com.example.consultamenu.Screen.Navigation
 import com.example.consultamenu.ui.theme.ConsultamenuTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ConsultamenuTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TextoEstilizadoUI(modifier = Modifier.padding(innerPadding))
+                    Navigation(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
